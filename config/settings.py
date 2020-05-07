@@ -20,7 +20,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+<<<<<<< HEAD
 SECRET_KEY = '0e1)hpe&te+594dvk(vbw0-scb(=05f^vyc20=)+*n7#!uhcj0'
+=======
+SECRET_KEY = 's+mgnr!fibrsb9&kz7)12+n$kzyn_tw-h&ltl@m5tfl*#_#yxb'
+>>>>>>> 82baa13c04360fbe1e74832ce2b1eb992b3094b4
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -31,13 +35,20 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+<<<<<<< HEAD
     'polls.apps.PollsConfig',
+=======
+>>>>>>> 82baa13c04360fbe1e74832ce2b1eb992b3094b4
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
+=======
+    'bookmark',
+>>>>>>> 82baa13c04360fbe1e74832ce2b1eb992b3094b4
 ]
 
 MIDDLEWARE = [
@@ -55,7 +66,11 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+<<<<<<< HEAD
         'DIRS': [],
+=======
+        'DIRS': [os.path.join(BASE_DIR,"templates")],
+>>>>>>> 82baa13c04360fbe1e74832ce2b1eb992b3094b4
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -119,3 +134,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+<<<<<<< HEAD
+=======
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_files')
+>>>>>>> 82baa13c04360fbe1e74832ce2b1eb992b3094b4
